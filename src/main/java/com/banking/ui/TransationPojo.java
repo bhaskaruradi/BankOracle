@@ -2,9 +2,17 @@ package com.banking.ui;
 
 public class TransationPojo {
      private long  amount;
+     private  long transactionid;
      private long fromaccount;
      private long toaccount;
      private long amounttransferred;
+     
+	public long getTransactionid() {
+		return transactionid;
+	}
+	public void setTransactionid(long transactionid) {
+		this.transactionid = transactionid;
+	}
 	public long getAmount() {
 		return amount;
 	}

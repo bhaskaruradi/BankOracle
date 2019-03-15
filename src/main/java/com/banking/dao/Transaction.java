@@ -1,10 +1,11 @@
 package com.banking.dao;
 
 import com.banking.ui.Customer;
+import com.banking.ui.TransationPojo;
 
 public interface Transaction {
-      void deposit(Customer customer);
-      void withDraw(Customer customer);
-      void showBalance(Customer customer);
-      void fundTransfer(Customer customer);
+      Customer deposit(Customer customer);
+      Customer withDraw(Customer customer);
+      Customer showBalance(Customer customer);
+      int  fundTransfer(long fromAccountNo,long toAccountNo,long balance,long amount);
 }

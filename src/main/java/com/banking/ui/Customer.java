@@ -1,7 +1,7 @@
 package com.banking.ui;
 
 public class Customer {
-	private long accountNo;
+	private long accountNo,toAccountNo;
 	 private String firstname;
      private String lastname;
      private String email;
@@ -9,19 +9,26 @@ public class Customer {
  	private String panNo;
  	private String aadharCardNo;
  	private String address;
- 	private long mobileNo;
+ 	private String mobileNo;
  	private long balance=0;
  	private long amount;
- 	public long getAmount() {
+ 	
+ 	public long getToAccountNo() {
+		return toAccountNo;
+	}
+	public void setToAccountNo(long toAccountNo) {
+		this.toAccountNo = toAccountNo;
+	}
+	public long getAmount() {
 		return amount;
 	}
 	public void setAmount(long amount) {
 		this.amount = amount;
 	}
-	public long getMobileNo() {
+	public String getMobileNo() {
 		return mobileNo;
 	}
-	public void setMobileNo(long mobileNo) {
+	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 	

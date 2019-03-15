@@ -11,26 +11,30 @@ public class ServiceTransactionImpl implements ServiceTransaction {
 
   Transaction t = new TransationImpl();
 
-	public void deposit(Customer customer) {
+	Customer cd = new Customer();
+
+	public Customer deposit(Customer customer) {
 		// TODO Auto-generated method stub
-		
-		
-		
+		return t.deposit(customer);
 	}
 
-	public void withDraw(Customer customer) {
+	public Customer withDraw(Customer customer) {
 		// TODO Auto-generated method stub
-		
+		return t.withDraw(customer);
 	}
 
-	public void showBalance(Customer customer) {
+	public Customer showBalance(Customer customer) {
 		// TODO Auto-generated method stub
-		
+		return t.showBalance(customer);
 	}
 
-	public void fundTransfer() {
+	public int fundTransfer(long fromAccountNo,long toAccountNo,long balance,long amount) {
 		// TODO Auto-generated method stub
-		
+		return t.fundTransfer(fromAccountNo,toAccountNo,balance,amount);
 	}
+
+
+
+	
 
 }

@@ -3,6 +3,6 @@ package com.banking.dao;
 import com.banking.ui.Customer;
 
 public interface Welcome {
-     Customer registration();
-     Customer login(Customer customer);
+     public int registration(Customer customer);
+    public  Customer login(Customer customer);
 }

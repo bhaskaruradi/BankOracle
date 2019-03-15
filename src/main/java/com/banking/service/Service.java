@@ -3,7 +3,9 @@ package com.banking.service;
 import com.banking.ui.Customer;
 
 public interface Service {
-	 Customer registration();
+	public  int registration(Customer customer);
      Customer login( Customer customer);
-	void validateAdhar();
+     boolean isAadharNoCorrect(Object object);
+ 	boolean isMobileNoCorrect(String mobileNo);
+	
 }
